@@ -5,6 +5,7 @@ metadata:
   labels:
     app: {{APP_NAME}}
 spec:
+  type: LoadBalancer
   clusterIP: None
   selector:
     app: {{APP_NAME}}

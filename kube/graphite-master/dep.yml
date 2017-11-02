@@ -10,6 +10,8 @@ spec:
         component: graphite
         app: {{APP_NAME}}
     spec:
+      nodeSelector:
+        app: monit
       containers:
         - name: {{APP_NAME}}
           image: {{IMAGE_NAME}}

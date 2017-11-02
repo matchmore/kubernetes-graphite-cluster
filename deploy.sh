@@ -1,0 +1,11 @@
+export DOCKER_REPOSITORY=nanit && \
+export STATSD_PROXY_REPLICAS=3 && \
+export STATSD_DAEMON_REPLICAS=2 && \
+export CARBON_RELAY_REPLICAS=3 && \
+export GRAPHITE_NODE_REPLICAS=3 && \
+export GRAPHITE_NODE_DISK_SIZE=30G && \
+export GRAPHITE_NODE_CURATOR_RETENTION=5 && \
+export GRAPHITE_MASTER_REPLICAS=1 && \
+export GRAPHITE_NODE_STORAGE_CLASS=standard && \
+export SUDO="" && \
+make deploy

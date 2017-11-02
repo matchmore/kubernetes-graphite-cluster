@@ -12,6 +12,8 @@ spec:
         app: {{APP_NAME}}
     spec:
       terminationGracePeriodSeconds: 10
+      nodeSelector:
+        app: monit
       containers:
       - name: {{APP_NAME}}
         image: {{IMAGE_NAME}}
